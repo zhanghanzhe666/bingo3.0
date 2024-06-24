@@ -25,9 +25,9 @@
 
 
 ## 演示站
-- Copilot -> https://microsoft-copilot-porxy.pages.dev/
-- Copilot(新版) -> https://microsoft-copilot-porxy.pages.dev/?dpwa=1
-- Designer -> https://microsoft-copilot-porxy.pages.dev/images/create
+- Copilot -> https://copilot.6m6c.cn/
+- Copilot(新版) -> https://copilot.6m6c.cn/?dpwa=1
+- Designer -> https://copilot.6m6c.cn/images/create
 
 ## 登录方式
 
@@ -122,6 +122,12 @@ npm run build-page
 之后就完成了。
 ![image](https://github.com/jianjianai/microsoft-copilot-porxy/assets/59829816/ce012d84-7df9-426b-877e-42e6fe77872e)
 
+
+4. 后续更新
+
+同步 github 仓库后 Workers 和 Pages 会自动同步更新。
+
+![image](https://github.com/jianjianai/microsoft-copilot-porxy/assets/59829816/f26b3753-0963-4a78-8773-7a9b6ebc1199)
 </details>
 
 
@@ -220,6 +226,7 @@ npm run build-page
 ### 环境
 |名称|下载地址|
 |-|-|
+|wget|```apt install wget```|
 |git|https://git-scm.com/download|
 |nodejs|https://nodejs.org|
 
@@ -244,6 +251,15 @@ npm run deploy
 
 </details>
 
+
+## 环境变量
+|名称|作用|
+|---|---|
+|```BYPASS_SERVER```|如果为空或者没配置则使用内置pass服务通过验证，如果配置了则使用配置的pass服务器通过验证。本项目将 [Harry-zklcdc/go-bingai-pass](Harry-zklcdc/go-bingai-pass) 打包在一起一键部署，一般情况下此环境变量无需配置。|
+
+
+## 鸣谢
+- 通过机器验证认证使用隔壁 [Harry-zklcdc/go-proxy-bingai](go-proxy-bingai ) 同款技术 [Harry-zklcdc/go-bingai-pass](Harry-zklcdc/go-bingai-pass)。 感谢 [Harry-zklcdc](https://github.com/Harry-zklcdc) 大佬的付出。
 
 
 ## 交流社区
