@@ -1,4 +1,4 @@
-# microsoft-copilot-porxy
+# bingo3.0
 ## 简介
 
 **Cloudflare Worker 的 Microsoft Copilot 代理。**
